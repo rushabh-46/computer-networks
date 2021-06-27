@@ -1,0 +1,33 @@
+Routing Table for Node No. 7 at Time 0
+Destination     Path     Cost
+     0          750        14
+     1          71         10
+     2          72         10
+     3          73         9
+     4          734        12
+     5          75         12
+     6          76         12
+     7          7          0
+
+Routing Table for Node No. 7 at Time 20
+Destination     Path     Cost
+     0          750        14
+     1          71         10
+     2          72         10
+     3          73         9
+     4          734        12
+     5          75         12
+     6          756        13
+     7          7          0
+
+Routing Table for Node No. 7 at Time 40
+Destination     Path     Cost
+     0          750        14
+     1          71         10
+     2          72         10
+     3          73         9
+     4          734        12
+     5          75         12
+     6          76         12
+     7          7          0
+

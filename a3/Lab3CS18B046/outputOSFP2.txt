@@ -1,0 +1,33 @@
+Routing Table for Node No. 2 at Time 0
+Destination     Path     Cost
+     0          250        4
+     1          251        11
+     2          2          0
+     3          23         9
+     4          2504       8
+     5          25         2
+     6          256        3
+     7          27         10
+
+Routing Table for Node No. 2 at Time 20
+Destination     Path     Cost
+     0          250        4
+     1          251        11
+     2          2          0
+     3          2503       10
+     4          2504       8
+     5          25         2
+     6          256        3
+     7          27         10
+
+Routing Table for Node No. 2 at Time 40
+Destination     Path     Cost
+     0          250        4
+     1          251        11
+     2          2          0
+     3          2503       10
+     4          2504       8
+     5          25         2
+     6          256        3
+     7          27         10
+

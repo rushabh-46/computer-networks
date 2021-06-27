@@ -1,0 +1,36 @@
+#!/bin/bash
+
+count=1
+
+PROG_NAME="cw.cpp"
+PYP_NAME="plot.py"
+
+for ((ki=1;ki<5;ki+=3)); 
+do 
+    # ki
+    for ((km=0;km<6;km+=5)); 
+    do 
+        kn=0.5
+        for ((kf=1;kf<4;kf+=2))
+        do
+            g++ $PROG_NAME -o cw && ./cw $ki 1.$km $kn 0.$kf 0.01 $count
+            python $PYP_NAME $count $ki 1.$km $kn 0.$kf 0.01
+            count=$((count+1))
+            g++ $PROG_NAME -o cw && ./cw $ki 1.$km $kn 0.$kf 0.0001 $count
+            python $PYP_NAME $count $ki 1.$km $kn 0.$kf 0.0001
+            count=$((count+1))
+        done
+        
+
+        kn=1.0
+        for ((kf=1;kf<4;kf+=2))
+        do
+            g++ $PROG_NAME -o cw && ./cw $ki 1.$km $kn 0.$kf 0.01 $count
+            python $PYP_NAME $count $ki 1.$km $kn 0.$kf 0.01
+            count=$((count+1))
+            g++ $PROG_NAME -o cw && ./cw $ki 1.$km $kn 0.$kf 0.0001 $count
+            python $PYP_NAME $count $ki 1.$km $kn 0.$kf 0.0001
+            count=$((count+1))
+        done
+    done
+done
